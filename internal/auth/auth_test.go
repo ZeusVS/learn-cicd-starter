@@ -10,7 +10,7 @@ func TestGetApiKey(t *testing.T) {
         input string
         want string
     }{
-        "simple test": {input: "ApiKey 1234", want: "12345"},
+        "simple test": {input: "ApiKey 1234", want: "1234"},
     }
 
     for name, tc := range tests {
