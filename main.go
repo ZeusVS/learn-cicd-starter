@@ -24,11 +24,6 @@ type apiConfig struct {
 //go:embed static/*
 var staticFiles embed.FS
 
-func unused() {
-    // This func does absolutely nothing
-    // Put here to test the github workflow linting check
-}
-
 func main() {
 	err := godotenv.Load(".env")
 	if err != nil {
